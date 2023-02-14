@@ -8,6 +8,7 @@ const productSchema= mongoose.Schema({
     source: String,
     bgColor: String,
     bio: String,
+    quantity:Number,
     size: String,
         create_at:{
             type: Date,

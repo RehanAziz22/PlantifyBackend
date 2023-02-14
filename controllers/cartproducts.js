@@ -21,7 +21,7 @@ const CartProductController = {
     createProduct: (request, response) => {
         const body = request.body;
         console.log(body, "body");
-        const { id, name, product, price, source, bgColor,size,bio } = request.body;
+        const { id, name, product, price, source, bgColor,size,bio,quantity } = request.body;
 
         if (!name || !size) {
             response.json({
@@ -35,6 +35,7 @@ const CartProductController = {
             name: name,
             product: product,
             price: price,
+            quantity:quantity,
             source: source,
             bgColor: bgColor,
             bio: bio,

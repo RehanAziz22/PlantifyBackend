@@ -136,7 +136,8 @@ router.post("/api/favoriteproduct",FavProductController.createProduct)
 
 // Get API
 router.get("/api/favoriteproduct",FavProductController.getProduct)
-
+//Delete Api
+router.delete("/api/favoriteproduct/:id", FavProductController.deleteProduct)
 
 //Delete Api
 router.delete("/api/product/:id", ProductController.deleteProduct)
